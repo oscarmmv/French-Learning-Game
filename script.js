@@ -47,6 +47,8 @@ function isCorrect() {
     console.log('Current Score: ' + score); 
     document.getElementById("score").innerHTML = 'Current Score: ' + score;
     correctList.push(correct);
+    console.log(correctList);
+    console.log(wrongList);
     start();
 }
 
@@ -102,8 +104,8 @@ function isWrong4() {
 function compileScore() {
     document.getElementById('compile').innerHTML =
     '<li>' + wrongList.join('</li><li>') + '</li>'
-    console.log(correctList.length +  "/" + (correctList.length + wrongList.length));
-    document.getElementById("score").innerHTML = 'Current Score: ' + score + 'Final Result: ' + correctList.length +  "/" + (correctList.length + wrongList.length);
+    console.log(correctList.length +  "/" + (correctList.length + wrongList.length - 1));
+    document.getElementById("score").innerHTML = 'Current Score: ' + score + 'Final Result: ' + correctList.length +  "/" + (correctList.length + wrongList.length - 1);
 }
 
 document.getElementById("score").innerHTML = 'Current Score: ' + score;
