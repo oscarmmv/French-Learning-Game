@@ -20,11 +20,6 @@ h1 {
 }
 
 
-.button:hover {
-    background-color: #0092E3;
-    color: white;
-    transition: all .3s ease-in;
-}
 
 
 
@@ -44,4 +39,49 @@ h1 {
     border-radius: 10px;
     list-style-type: none;
     font-family: 'Lato', sans-serif;
+}
+@media screen and (min-width: 1025px) {
+    .button:hover {
+        background-color: #0092E3;
+        color: white;
+        transition: all .3s ease-in;
+    }  
+}
+@media only screen and (max-width: 1024px) {
+    .button:active {
+        background-color: #0092E3;
+        color: white;
+    }
+    .question {
+        font-size: 70px;
+        margin-left: 33px;
+    }
+    .button {    
+        margin-right: 10px;
+        margin-bottom: 50px;
+        height: 30px;
+    }
+    
+    div{
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    div {
+        padding-top: 15%;
+    }
+    .button {    
+        
+        margin-bottom: 20px;
+        font-size: 11px;
+        width: 7rem;
+    }
+
+    .results {
+        margin-left: 23%;
+    }
+    .scoreCompile {
+        margin-left: 12.5%;
+    }
 }
