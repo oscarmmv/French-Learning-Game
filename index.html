@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Learn French</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="title"></div>
+            <ul>
+                <input type="button" value="a" id="myButton1" onclick="isWrong1();"></input> 
+                <input type="button" value="b" id="myButton2" onclick="isWrong2();"></input> 
+                <input type="button" value="c" id="myButton3" onclick="isWrong3();"></input> 
+                <input type="button" value="c" id="myButton4" onclick="isWrong4();"></input> 
+                <input type="button" value="d" id="myButton5" onclick="isCorrect();"></input> 
+
+                <!-- 
+                <button onclick="isCorrect();">a</button> 
+                <button onclick="isWrong();">b</button>
+                <button onclick="isWrong();">c</button>
+                <button onclick="isWrong();">d</button> 
+                -->
+            </ul>
+            <div id="score"></div>
+            <button id="compile" onclick="compileScore();">Compile Score</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
