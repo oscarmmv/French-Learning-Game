@@ -2,21 +2,25 @@
 <html lang="en">
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Learn French</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learn French</title>
+    <link rel="icon" href="Assets/logo.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="wrapper">
             <h1 id="title"></h1>
             <ul>
-                <div id="outer">
-                    <input class = "button" type="button" value="a" id="myButton1" onclick="isWrong1();"></input> 
-                    <input class = "button" type="button" value="b" id="myButton2" onclick="isWrong2();"></input> 
-                    <input class = "button" type="button" value="c" id="myButton3" onclick="isWrong3();"></input> 
-                    <input class = "button" type="button" value="c" id="myButton4" onclick="isWrong4();"></input> 
-                    <input class = "button" type="button" value="d" id="myButton5" onclick="isCorrect();"></input> 
-                </div>
+                <input class = "button" type="button" value="PLAY" id="myButton1" onclick="isWrong1(); playWrongSound();"></input> 
+                <input class = "button" type="button" value="PLAY" id="myButton2" onclick="isWrong2(); playWrongSound();"></input> 
+                <input class = "button" type="button" value="PLAY" id="myButton3" onclick="isWrong3(); playWrongSound();"></input> 
+                <input class = "button" type="button" value="PLAY" id="myButton4" onclick="isWrong4(); playWrongSound();"></input> 
+                <input class = "button" type="button" value="PLAY" id="myButton5" onclick="isCorrect(); playCorrectSound();"></input> 
+                <audio id="audioWrong" src="Assets/wrong.wav"></audio>
+                <audio id="audioCorrect" src="Assets/correct.wav"></audio>
             </ul>
             <div class="results" id="score"></div>
             <button class ="scoreCompile" id="compile" onclick="compileScore();">Compile Score</button>
